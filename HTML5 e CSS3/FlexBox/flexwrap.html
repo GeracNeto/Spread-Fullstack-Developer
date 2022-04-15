@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex Wrap</title>
+
+    <style>
+        .flex-containermaster-left{
+            display: flex;
+            border: 2px solid;
+            background-color: bisque;
+            flex-direction: column;
+            max-width: 300px;
+            margin-bottom: 15px;
+        }
+
+        .flex-containermaster-right{
+            display: flex;
+            border: 2px solid;
+            background-color: bisque;
+            flex-direction: column;
+            max-width: 300px;
+        }
+
+        .flex-containerrow{
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 300px;
+        }
+
+        .flex-containercolumn{
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 300px;
+            flex-direction: column;
+        }
+
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            width: 100px;
+            line-height: 50px;
+            min-width: 100px;
+        }
+
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .orange{
+            background-color: orange;
+        }
+
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-containermaster-left">
+        <h1>No Wrap Row</h1>
+        <div class="flex-containerrow">
+            <div class="item blue">1</div>
+            <div class="item green">2</div>
+            <div class="item orange">3</div>
+            <div class="item red">4</div>
+        </div>
+        <h1>Wrap Row</h1>
+        <div class="flex-containerrow wrap">
+            <div class="item blue">1</div>
+            <div class="item green">2</div>
+            <div class="item orange">3</div>
+            <div class="item red">4</div>
+        </div>
+        <h1>Wrap Reverse Row</h1>
+        <div class="flex-containerrow wrap-reverse">
+            <div class="item blue">1</div>
+            <div class="item green">2</div>
+            <div class="item orange">3</div>
+            <div class="item red">4</div>
+        </div>
+    </div>
+
+    <div class="flex-containermaster-right">
+        <h1>No Wrap Column</h1>
+        <div class="flex-containercolumn">
+            <div class="item blue">1</div>
+            <div class="item green">2</div>
+            <div class="item orange">3</div>
+            <div class="item red">4</div>
+        </div>
+        <h1>Wrap Column</h1>
+        <div class="flex-containercolumn wrap">
+            <div class="item blue">1</div>
+            <div class="item green">2</div>
+            <div class="item orange">3</div>
+            <div class="item red">4</div>
+        </div>
+        <h1>Wrap Reverse Column</h1>
+        <div class="flex-containercolumn wrap-reverse">
+            <div class="item blue">1</div>
+            <div class="item green">2</div>
+            <div class="item orange">3</div>
+            <div class="item red">4</div>
+        </div>
+    </div>
+</body>
+</html>
