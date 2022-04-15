@@ -1,21 +1,60 @@
-*{
-    background-color: darkslategrey;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+body{
+    background-color: cornflowerblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 900px;
+    margin: auto; /* deixa o conteúdo do body responsivo a tamanhos de telas diferentes */
 }
 
-#headerperfil{
-
-    border: 2px solid;
-    
+.fotoperfil{
+    border-radius: 100px;
+    margin-bottom: 5px;
 }
 
-#fotoperfil{
-    padding: 5px;
-    border: 3px solid navajowhite;
+#title, .subtitle, .post_title{
+    color: black;
 }
 
-h1{
-    
+.post_title{
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;
+    text-decoration: underline;
 }
 
+.post{
+    border: 3px solid;
+    padding: 15px;
+    background-color: whitesmoke;
+    border-color: black;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.post_content{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post_image{
+    margin-bottom: 15px;
+    width: 250px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.contact_list{
+    list-style-type: none;
+    padding: 15px;
+}
+
+li{
+    padding: 2px;
+}
+
+a:link{color: darkblue;}
+a:visited{color: black;}
+a:hover{color:white}
+a:active{color: cornflowerblue}
