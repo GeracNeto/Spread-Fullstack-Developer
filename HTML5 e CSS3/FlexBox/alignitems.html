@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Items</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
+        h2{
+            color: red;
+        }
+
+        .flex-container{
+            max-width: 350px;
+            border: 2px solid;
+            display: flex;
+
+        }
+        
+        .item{
+            background-color: purple;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .align-center{
+            align-items: center;
+        }
+
+        .align-strech{
+            align-items: stretch;
+        }
+
+        .align-baseline{
+            align-items: baseline;
+        }
+
+        .align-start{
+            align-items: flex-start;
+        }
+
+        .align-end{
+            align-items: flex-end;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 400px;
+            justify-content: center;
+        }
+
+        .central .item{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Align-Itens</h1>
+    
+    <h2>ROW</h2>
+
+    <h3>Align-Center</h3>
+    <section class="flex-container align-center">
+        <div class="item">1 item</div>
+        <div class="item">2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item</div>
+        <div class="item">3 item 3 item 3 item 3 item</div>
+    </section>
+
+    <h3>Align-Strech</h3>
+    <section class="flex-container align-strech">
+        <div class="item">1 item 1 item 1 item</div>
+        <div class="item">2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item</div>
+        <div class="item">3 item 3 item 3 item 3 item</div>
+    </section>
+
+    <h3>Align-Baseline</h3>
+    <section class="flex-container align-baseline">
+        <div class="item">1 item 1 item 1 item</div>
+        <div class="item">2 item 2 item 2 item 2 item 2 item 2 item 2 item</div>
+        <div class="item">3 item 3 item 3 item 3 item</div>
+    </section>
+
+    <h3>Align-Start</h3>
+    <section class="flex-container align-start">
+        <div class="item">1 item 1 item 1 item</div>
+        <div class="item">2 item 2 item 2 item 2 item 2 item 2 item 2 item</div>
+        <div class="item">3 item 3 item 3 item 3 item</div>
+    </section>
+
+    <h3>Align-End</h3>
+    <section class="flex-container align-end">
+        <div class="item">1 item 1 item 1 item</div>
+        <div class="item">2 item 2 item 2 item 2 item 2 item 2 item 2 item</div>
+        <div class="item">3 item 3 item 3 item 3 item</div>
+    </section>
+
+    <h2>COLUMN</h2>
+
+    <h3>Align-Center</h3>
+    <section class="flex-container align-center column">
+        <div class="item">1 item</div>
+        <div class="item">2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item</div>
+        <div class="item">3 item 3 item 3 item 3 item</div>
+    </section>
+
+    <h3>Align-Strech</h3>
+    <section class="flex-container align-strech column">
+        <div class="item">1 item 1 item 1 item</div>
+        <div class="item">2 item 2 item 2 item 2 item 2 item 2 item 2 item 2 item</div>
+        <div class="item">3 item 3 item 3 item 3 item</div>
+    </section>
+
+    <h3>Align-Baseline</h3>
+    <section class="flex-container align-baseline column">
+        <div class="item">1 item 1 item 1 item</div>
+        <div class="item">2 item 2 item 2 item 2 item 2 item 2 item 2 item</div>
+        <div class="item">3 item 3 item 3 item 3 item</div>
+    </section>
+
+    <h3>Align-Start</h3>
+    <section class="flex-container align-start column">
+        <div class="item">1 item 1 item 1 item</div>
+        <div class="item">2 item 2 item 2 item 2 item 2 item 2 item 2 item</div>
+        <div class="item">3 item 3 item 3 item 3 item</div>
+    </section>
+
+    <h3>Align-End</h3>
+    <section class="flex-container align-end column">
+        <div class="item">1 item 1 item 1 item</div>
+        <div class="item">2 item 2 item 2 item 2 item 2 item 2 item 2 item</div>
+        <div class="item">3 item 3 item 3 item 3 item</div>
+    </section>
+
+    <h2>Alimento Central à Tela</h2>
+    <section class="flex-container central align-center">
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam non et sed eligendi sint, tempore, asperiores laborum optio delectus adipisci cumque eaque explicabo doloribus doloremque? Ex atque odio enim quod?</div>
+    </section>
+</body>
+</html>
