@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento Uso FlexBox</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        h1{
+            margin-bottom: 50px;
+        }
+
+        h2{
+            margin-bottom: 50px;
+        }
+
+        .container{
+            display: flex;
+            border: 2px solid;
+            max-width: 300px;
+            max-height: 500px;
+            align-items: stretch;
+            line-height: 200px;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .item{
+            text-align: center;
+            color: white;
+            width: 100px;
+            height: 200px;
+            font-size: 20px;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .purple{
+            background-color: purple;
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Treinando Uso do FlexBox</h1>
+
+    <h2>Caixa de Cores</h2>
+    
+    <section class="container">
+        <div class="item red">RED</div>
+        <div class="item green">GREEN</div>
+        <div class="item blue">BLUE</div>
+        <div class="item purple">PURPLE</div>
+    </section>
+    
+</body>
+</html>
