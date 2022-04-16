@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Content</title>
+    <style>
+        .container{
+            height: 500px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid;
+        }
+
+        .item{
+            background-color: red;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;    
+            border: 1px solid black;        
+        }
+
+        .strech{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .start{
+            align-content: flex-start;
+        }
+
+        .end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h2>Strech</h2>
+    <div class="container strech">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremq</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet conse</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sit nam autem commodi quis qui error possimus neque recusandae. Molestias eum tempore labore ullam sequi sapiente suscipit ducimus sed ut.</div>
+    </div>
+
+    <h2>Center</h2>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremq</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet conse</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sit nam autem commodi quis qui error possimus neque recusandae. Molestias eum tempore labore ullam sequi sapiente suscipit ducimus sed ut.</div>
+    </div>
+    
+    <h2>Flex_Start</h2>
+    <div class="container start">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremq</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet conse</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sit nam autem commodi quis qui error possimus neque recusandae. Molestias eum tempore labore ullam sequi sapiente suscipit ducimus sed ut.</div>
+    </div>
+
+    <h2>Flex_End</h2>
+    <div class="container end">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremq</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet conse</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sit nam autem commodi quis qui error possimus neque recusandae. Molestias eum tempore labore ullam sequi sapiente suscipit ducimus sed ut.</div>
+    </div>
+
+    <h2>Space-Around</h2>
+    <div class="container space-around">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremq</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet conse</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sit nam autem commodi quis qui error possimus neque recusandae. Molestias eum tempore labore ullam sequi sapiente suscipit ducimus sed ut.</div>
+    </div>
+
+    <h2>Space-between</h2>
+    <div class="container space-between">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremq</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet conse</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sit nam autem commodi quis qui error possimus neque recusandae. Molestias eum tempore labore ullam sequi sapiente suscipit ducimus sed ut.</div>
+    </div>
+</body>
+</html>
