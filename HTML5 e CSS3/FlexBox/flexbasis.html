@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Felx Basis</title>
+    <style>
+        .flex-container{
+            max-width: 300px;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: coral;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .flex-basis-auto{
+            flex-basis: auto;
+        }
+
+        .flex-basis-0{
+            flex-basis: 0;
+        }
+
+        .flex-basis-100{
+            flex-basis: 100px;
+        }
+
+        .flex-grow-1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <h2>Flex Basis Auto</h2>
+    <div class="flex-container">
+        <div class="item flex-grow-1 flex-basis-auto">A</div>
+        <div class="item">BBB</div>
+        <div class="item">C</div>
+        <div class="item">DEF</div>
+    </div>
+
+    <h2>Flex Basis 0</h2>
+    <div class="flex-container">
+        <div class="item flex-grow-1 flex-basis-0">A</div>
+        <div class="item">BBB</div>
+        <div class="item">C</div>
+        <div class="item">DEF</div>
+    </div>
+
+    <h2>Flex Basis 100</h2>
+    <div class="flex-container">
+        <div class="item flex-basis-100">A</div>
+        <div class="item">BBB</div>
+        <div class="item">C</div>
+        <div class="item">DEF</div>
+    </div>
+
+</body>
+</html>
