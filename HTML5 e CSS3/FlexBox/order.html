@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Order</title>
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid;
+            max-width: 500px;
+            align-items: stretch;
+        }
+
+        .item{
+            flex: 1;
+            background-color: darkblue;
+            font-size: 24px;
+            color: white;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .order-0{
+            order: 0;
+        }
+
+        .order-1{
+            order: 1;
+        }
+
+        .order-2{
+            order: 2;
+        }
+
+        .order-3{
+            order: 3;
+        }
+
+        .order-4{
+            order: 4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order</h1>
+
+    <h2>ROW</h2>
+    <section class="container">
+        <div class="item order-4">ITEM 1</div>
+        <div class="item order-3">ITEM 2</div>
+        <div class="item order-1">ITEM 3</div>
+        <div class="item order-0">ITEM 4</div>
+        <div class="item order-2">ITEM 5</div>
+    </section>
+
+    <h2>COLUMN</h2>
+    <section class="container column">
+        <div class="item order-4">ITEM 1</div>
+        <div class="item order-3">ITEM 2</div>
+        <div class="item order-1">ITEM 3</div>
+        <div class="item order-0">ITEM 4</div>
+        <div class="item order-2">ITEM 5</div>
+    </section>
+    
+</body>
+</html>
