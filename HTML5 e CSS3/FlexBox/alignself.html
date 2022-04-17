@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Self</title>
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid;
+            max-width: 500px;
+            height: 300px;
+            align-items: center;
+        }
+
+        .item{
+            background-color: chartreuse;
+            font-size: 24px;
+            text-align: center;
+            margin: 2px;
+            flex: 1;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .align-self-start{
+            align-self: flex-start;
+        }
+
+        .align-self-end{
+            align-self: flex-end;
+        }
+
+        .align-self-center{
+            align-self: center;
+        }
+
+        .align-self-strech{
+            align-self: stretch;
+        }
+
+        .align-self-baseline{
+            align-self: baseline;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Align Self</h1>
+
+    <h2>ROW</h2>
+
+    <h3>Align-Self-Auto para todos</h3>
+    <section class="container">
+        <div class="item">Esse é o item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni i</div>
+        <div class="item">CCCCCCCCCC</div>
+        <div class="item">suhaushuhsa</div>
+        <div class="item">23</div>
+    </section>
+
+    <h3>Align-Self Alternado, cada item</h3>
+    <section class="container">
+        <div class="item align-self-start">Esse é o item 1</div>
+        <div class="item align-self-baseline">Lorem ipsum dolor sit am</div>
+        <div class="item align-self-strech">CCCCCCCCCC</div>
+        <div class="item align-self-end">suhaushuhsa</div>
+        <div class="item align-self-center">23</div>
+    </section>
+
+    <h2>COLUMN</h2>
+
+    <h3>Align-Self-Auto para todos</h3>
+    <section class="container column">
+        <div class="item">Esse é o item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni i</div>
+        <div class="item">CCCCCCCCCC</div>
+        <div class="item">suhaushuhsa</div>
+        <div class="item">23</div>
+    </section>
+
+    <h3>Align-Self Alternado, cada item</h3>
+    <section class="container column">
+        <div class="item align-self-start">Esse é o item 1</div>
+        <div class="item align-self-baseline">Lorem ipsum dolor sit am</div>
+        <div class="item align-self-strech">CCCCCCCCCC</div>
+        <div class="item align-self-end">suhaushuhsa</div>
+        <div class="item align-self-center">23</div>
+    </section>
+    
+</body>
+</html>
