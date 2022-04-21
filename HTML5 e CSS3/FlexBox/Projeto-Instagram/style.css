@@ -1,12 +1,20 @@
 *{
     margin: auto;
-
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 body{
     background-color: #fafafa;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
 }
 
 .flex-container{
@@ -14,18 +22,25 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 32px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: fit-content;
 }
 
 .container-left{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    width: 500px;
     height: 541px;
 }
 
 .item{
     margin: 0;
+}
+
+#img-celular{
+    height: 620px;
 }
 
 .container-dados{
@@ -76,11 +91,12 @@ body{
     margin-bottom: 0;
 }
 
-#entrar-facebook{
+.entrar-facebook{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    align-content: center;
+    width: 100%;
     height: min-content;
     background-color: white;
     color: #385185;
@@ -89,20 +105,20 @@ body{
     margin-top: 20px;
 }
 
-#entrar-facebook img{
-    margin: 0;
+.entrar-facebook img{
     width: 6%;
+    margin-left: 0;
+    margin-right: 10px;
 }
 
-#entrar-facebook p{
-    margin-left: 8px;
-    margin-right: 0;
+.entrar-facebook a{
+    margin: 0;
     background-color: white;
 }
 
 #forgot-password{
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 14px;
     color: #385185;
     margin-top: 20px;
     background-color: white;
@@ -121,7 +137,7 @@ body{
     background-color: white;
 }
 
-.cadastro span{
+.cadastro a{
     color: #0095f6;
     font-weight: bolder;
 }
@@ -134,45 +150,45 @@ body{
 .img-store{
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 350px;
 }
 
-#app-store{
-    width: 25%;
-    margin: 0;
-}
-
-#play-store{
-    width: 25%;
-    margin-right: 0;
-    margin-left: 10px;
+.apps img{
+    width: 150px;
 }
 
 footer{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 25%;
+    margin-right: 25%;
+    align-items: center;
+    width: max-content;
 }
 
 footer ul{
     display: flex;
+    padding: 0;
 }
 
 footer ul li{
-    list-style: none;
-    margin-left: 10px;
-    margin-right: 10px;
     color: gray;
-    font-size: 12px;
+    font-size: 14px;
+    margin: 0;
 }
 
 footer ul li a{
-    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
     color: gray;
-    font-size: 12px;
+    font-size: 14px;
 }
 
-#topicos{
+.topicos{
     margin-top: 10px;
     margin-bottom: 20px;
 }
