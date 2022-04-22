@@ -24,7 +24,7 @@ function returnEvenValues(array){
             evenNums.push(array[i]);
         }
     }
-    console.log(evenNums);
+    console.log("Os números pares são:", evenNums);
 }
 
 returnEvenValues(array);
