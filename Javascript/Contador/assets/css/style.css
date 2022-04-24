@@ -1,10 +1,55 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+    font-size: 36px;
+    box-sizing: border-box;
 }
 
 body{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
+    margin: auto;
+    width: 80%;
+    padding: 5%;
+}
+
+h1{
+    background-color: darkgray;
+    text-align: center;
+    line-height: 60px;
+    width: 50%;
+    height: 10%;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+h1 span{
+    color: rgb(236, 236, 19);
+    background-color: darkgray;
+    text-transform: uppercase;
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 50%;
+    border: 1px;
+}
+
+button{
+    width: 30%;
+    height: 30%;
+    border-radius: 5px;
+    background-color: darkgrey;
+    border: 1px solid red;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#currentNumber{
+    font-size: 3rem;
 }

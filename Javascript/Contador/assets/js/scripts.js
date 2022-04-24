@@ -1,13 +1,14 @@
 console.log("Primeiro Projeto em Javascript")
 
-var currentnumberwrapper = document.getElementById('currentnumber')
+var currentNumberWrapper = document.getElementById('currentNumber');
+var currentNumber = 0;
 
 function increment(){
-    currentnumber = currentnumber + 1;
-    currentnumberwrapper.innerHTML = currentnumber;
+    currentNumber += 1;
+    currentNumberWrapper.innerHTML = currentNumber;
 }
 
 function decrement(){
-    currentnumber = currentnumber - 1;
-    currentnumberwrapper.innerHTML = currentnumber;
+    currentNumber -= 1;
+    currentNumberWrapper.innerHTML = currentNumber;
 }
