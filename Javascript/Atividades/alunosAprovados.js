@@ -68,8 +68,6 @@ const alunos = [
 function alunosAprovados(array, media){
     let aprovados = [];
 
-    
-
     for(let i = 0; i < array.length; i++){
         //Uso do object destructuring
         const {nome, nota} = array[i];
