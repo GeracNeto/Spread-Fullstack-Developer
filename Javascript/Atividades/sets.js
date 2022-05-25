@@ -1,6 +1,6 @@
 // Atividade 2 Sets
 
-// Desenvolver código que tranforma um array em um Set
+// Desenvolver código que tranforma um array em um Set e retorne um outro array apenas com valores únicos
 
 // Método 1
 
@@ -14,7 +14,8 @@ for(let i = 0; i < array.length; i++){
   
 }
 
-console.log(mySet);
+
+console.log([...mySet]); // Tranforma o set um array utilizado a técnica do spread
 
 
 // Método 2
@@ -24,7 +25,7 @@ const myArray = [30, 30, 40, 5, 223, 2049, 3034, 5];
 function transformArrayToSet(array){
   const newSet = new Set(array); // Transforma o array em um Set
   
-  return console.log(newSet);
+  return console.log([...newSet]);
 }
 
 transformArrayToSet(myArray);
