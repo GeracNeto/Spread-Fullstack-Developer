@@ -1,11 +1,14 @@
 // Coleções Sets
 
 // São estruturas que armazenam valores únicos
+const myArray = [23, 23, 23, 4, 5, 6 ,3 ,34 ,34, 34, 34];
 
-const mySet = new Set();
+function transformArrayToSet(array){
+    let newSet = new Set(array); // tranforma o array em um Set
 
-mySet.add(5);
-mySet.add(4);
-mySet.add('teste');
+    return console.log(newSet);
+}
 
-console.log(mySet);
+transformArrayToSet(myArray);
+// Set(6) { 23, 4, 5, 6, 3, 34 }
+
