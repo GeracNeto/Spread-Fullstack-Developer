@@ -4,8 +4,17 @@
 
 const array = [23,2,56,234,86,2,64,3,65,2,5,57,123];
 
+const evenArray = array.filter((item) => item % 2 === 0); // retorna todos os números pares do array
+
+console.log(evenArray); 
+
+// Esse código é o mesmo que o de baixo
+
+/*
+
 const evenArray = array.filter(function(item){
-    return item % 2 === 0; // retorna todos os números pares do array
+    return item % 2 === 0; 
 })
 
-console.log(evenArray);
+*/
+
