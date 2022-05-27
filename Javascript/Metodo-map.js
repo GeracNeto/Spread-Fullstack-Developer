@@ -11,6 +11,8 @@ console.log(newArray);
 
 // Outro exemplo
 
+// Coloca Pereira em todos os nomes
+
 const nomes = ['Geraldo', 'Millena', 'Thaina', 'Thiago'];
 
 function somaPereira(arr){
@@ -22,4 +24,37 @@ let nomesPereira = nomes.map(somaPereira); // o .map vai executar a função "so
 console.log(nomesPereira);
 
 
+// Outro exemplo
+
+// Soma 5 anos para cada idade de todas as pessoas
+
+const pessoas = [
+    {
+        nome: 'Pedro',
+        idade: 23
+    },
+    {
+        nome: 'Roberto',
+        idade: 45
+    },
+    {
+        nome: 'Ana',
+        idade: 59
+    },
+    {
+        nome: 'Rodrigo',
+        idade: 15
+    },
+    {
+        nome: 'Rafael',
+        idade: 5
+    }
+]
+
+const idadeSoma5 = pessoas.map(function(item){
+    return item.idade + 5;
+})
+    
+
+console.log(idadeSoma5);
 
