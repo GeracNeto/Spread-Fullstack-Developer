@@ -1,4 +1,4 @@
-// Atividade: validação de erros por tipo
+// Atividade: validação de erros por tipo Throw
 
 // Erros
 const error1 = new Error('ReferenceError');
