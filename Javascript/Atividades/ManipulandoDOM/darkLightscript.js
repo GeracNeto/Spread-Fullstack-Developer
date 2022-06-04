@@ -4,6 +4,8 @@
 const darkModeButton = document.getElementById("buttonMode");
 const darkModeBody = document.querySelector('body');
 const darkModeImg = document.getElementById('sunmoon');
+const darkModeGitImg = document.getElementById('git-img');
+const darkModeDevelop = document.querySelector('h3')
 
 // Aguarda o evento de click no botão para executar a função changeMode
 darkModeButton.addEventListener("click", changeMode);
@@ -12,6 +14,7 @@ darkModeButton.addEventListener("click", changeMode);
 function changeClasses(){
     darkModeButton.classList.toggle('dark-mode');
     darkModeBody.classList.toggle('dark-mode');
+    darkModeDevelop.classList.toggle('dark-mode');
 }
 
 // Altera o texto do botão
@@ -24,17 +27,19 @@ function changeText(){
 }
 
 // Muda o atributo src trocando o caminho da imagem no HTML
-function changeImg(){
+function changeImgs(){
     if(darkModeBody.classList.contains('dark-mode')){
         darkModeImg.setAttribute('src', 'moon.png');
+        darkModeGitImg.setAttribute('src', 'github.png');
         return;
     }
-    darkModeImg.setAttribute('src', 'sun.png');    
+    darkModeImg.setAttribute('src', 'sun.png');
+    darkModeGitImg.setAttribute('src', 'placa-do-github.png');   
 }
 
 // Chama as duas funções para executar a alterações assim que o botão é clicado
 function changeMode(){
     changeClasses();
     changeText();
-    changeImg();
+    changeImgs();
 }
