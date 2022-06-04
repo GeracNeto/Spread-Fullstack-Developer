@@ -15,7 +15,7 @@ body.dark-mode{
     justify-content: space-around;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
 
 }
 
@@ -54,6 +54,35 @@ img{
     color: black;
 }
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    width: 100%;
+}
+
+h3.dark-mode{
+    color: white;
+}
+
+.sociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sociais a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.sociais img{
+    width: 30%;
+}
 
 @media (max-width: 1200px){
     img{
