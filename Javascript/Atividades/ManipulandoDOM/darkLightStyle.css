@@ -10,18 +10,37 @@ body.dark-mode{
 
 }
 
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 10%;
+}
+
 .central{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    height: 15%;
 }
 
 #buttonMode{
     font-size: 3rem;
-    width: 40%;
-    height: 15%;
+    width: 20%;
+    height: 100%;
     background-color: black;
     color: white;
     border-radius: 10%;
@@ -33,5 +52,52 @@ body.dark-mode{
 #buttonMode.dark-mode{
     background-color: white;
     color: black;
-
 }
+
+
+@media (max-width: 1200px){
+    img{
+        width: 20%;
+    }
+}
+
+@media (max-width: 770px){
+    img{
+        width: 30%;
+    }
+
+    #buttonMode{
+        width: 30%;
+    }
+}
+
+@media (max-width: 520px){
+    img{
+        width: 40%;
+    }
+
+    #buttonMode{
+        width: 40%;
+    }
+}
+
+@media (max-width: 390px){
+    img{
+        width: 60%;
+    }
+
+    #buttonMode{
+        width: 60%;
+    }
+}
+
+@media (max-width: 250px){
+    img{
+        width: 80%;
+    }
+
+    #buttonMode{
+        width: 80%;
+    }
+}
+
