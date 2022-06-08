@@ -26,19 +26,23 @@ type IDomestico = IFelino | ICanino; // Na hora de declarar o objeto posso "unir
 const animal: IDomestico = {
     nome: 'Peixe-Dourado',
     tipo: 'Aquatico',
-    domestico: true, // Essa eu tbm não sou obrigado a passar
+    domestico: true,
+    porte: 'Pequeno',
     //visaoNoturna -> Essa propriedade eu posso ou não passar, pois coloquei IFelino "|" ICanino no type.
+    emitirSom: (typeSom) => (`O som é ${typeSom}`),
 }
 
 const animal1: IAnimal = {
     nome: 'Cachorro',
     tipo: 'Terrestre',
+    domestico: true,
     emitirSom: (typeSom) => (`O som é ${typeSom}`)
 }
 
 const animal2: IFelino = {
     nome: 'Leao',
     tipo: 'Terrestre',
+    domestico: false,
     emitirSom: (typeSom) => (`O som é ${typeSom}`),
     visaoNoturna: true
 }
